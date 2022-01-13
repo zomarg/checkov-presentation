@@ -10,12 +10,14 @@ resource "azurerm_resource_group" "testrg" {
 resource "azurerm_storage_account" "testsa" {
   #checkov:skip=CKV2_AZURE_1:The storage account doesent include sensitive data
   #checkov:skip=CKV2_AZURE_18:The storage account doesent include sensitive data
-  name                      = "storageaccountname"
-  resource_group_name       = azurerm_resource_group.testrg.name
-  location                  = "westus"
-  account_tier              = "Standard"
-  account_replication_type  = "GRS"
-  #default_action            = "Deny"
+  name                     = "storageaccountname"
+  resource_group_name      = azurerm_resource_group.testrg.name
+  location                 = "westus"
+  account_tier             = "Standard"
+  account_replication_type = "GRS"
+  network_rules {
+    default_action = "Deny"
+  }
   enable_https_traffic_only = true
   min_tls_version           = "TLS1_2"
   queue_properties {
