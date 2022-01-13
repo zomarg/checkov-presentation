@@ -17,6 +17,7 @@ resource "azurerm_storage_account" "testsa" {
   account_replication_type = "GRS"
   network_rules {
     default_action = "Deny"
+    #bypass         = ["AzureServices"] #Checkov not complaining even though this is a must have
   }
   enable_https_traffic_only = true
   min_tls_version           = "TLS1_2"
