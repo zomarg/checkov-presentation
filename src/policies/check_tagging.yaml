@@ -1,8 +1,8 @@
 ---
 metadata:
  name: "Check that SA has BusinessOwner = GK."
- id: "CKV2_AWS_TAGGING_1"
- category: "CONVENTION"
+ id: "CKV2_AZURE_TAGGING_1"
+ category: "GOVERNANCE"
 definition:
        cond_type: "attribute"
        resource_types:
