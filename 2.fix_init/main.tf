@@ -5,7 +5,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "testrg" {
   name     = "resourceGroupName"
   location = "westus"
-}    
+}
 
 resource "azurerm_storage_account" "testsa" {
   name                     = "storageaccountname"
@@ -13,8 +13,9 @@ resource "azurerm_storage_account" "testsa" {
   location                 = "westus"
   account_tier             = "Standard"
   account_replication_type = "GRS"
-  queue_properties  {
-   logging {
+  default_action           = "Deny"
+  queue_properties {
+    logging {
       delete                = true
       read                  = true
       write                 = true
