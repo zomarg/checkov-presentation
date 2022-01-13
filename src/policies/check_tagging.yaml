@@ -1,0 +1,12 @@
+---
+metadata:
+ name: "Check that SA has BusinessOwner = GK."
+ id: "CKV2_AWS_TAGGING_1"
+ category: "CONVENTION"
+definition:
+       cond_type: "attribute"
+       resource_types:
+       - "azurerm_storage_account"
+       attribute: "tags.BusinessOwner"
+       operator: "equals"
+       value: "GK"
