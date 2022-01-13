@@ -1,0 +1,1 @@
+checkov --file main_fix_tags.tf --external-checks-dir ../policies/
