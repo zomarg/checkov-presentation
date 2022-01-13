@@ -8,6 +8,8 @@ resource "azurerm_resource_group" "testrg" {
 }
 
 resource "azurerm_storage_account" "testsa" {
+  #checkov:skip=CKV2_AZURE_1:The storage account doesent include sensitive data
+  #checkov:skip=CKV2_AZURE_18:The storage account doesent include sensitive data
   name                      = "storageaccountname"
   resource_group_name       = azurerm_resource_group.testrg.name
   location                  = "westus"
