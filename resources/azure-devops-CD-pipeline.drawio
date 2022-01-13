@@ -1,0 +1,71 @@
+<mxfile host="65bd71144e">
+    <diagram id="_3VexGb0rCEcWxsBb4M6" name="Page-1">
+        <mxGraphModel dx="735" dy="322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="13" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="10" width="410" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="80" width="120" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="dev" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="125" y="80" width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="3" target="18">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="273" y="180"/>
+                            <mxPoint x="273" y="235"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="docker run&lt;br&gt;(cmd CD)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="155" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="CD Pipeline" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="20" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Terraform Plan" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="85" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="convert plan to json" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="137.5" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="checkov plan.json" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="195" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="222" width="60" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="docker pull" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="135" y="90" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="terraform apply" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="270" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="smoke tests&lt;br&gt;etc ..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="330" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="notifications etc." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="135" y="220" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="qa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="125" y="325" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="33" target="18">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="270" y="345"/>
+                            <mxPoint x="270" y="235"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="prod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="135" y="335" width="120" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
