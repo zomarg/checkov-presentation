@@ -56,7 +56,7 @@ resource "azurerm_storage_account" "example" {
   enable_https_traffic_only = true
 
   network_rules {
-    default_action="Deny"
+    default_action = "Deny"
   }
 
   identity {
@@ -71,7 +71,7 @@ resource "azurerm_storage_account_customer_managed_key" "example" {
 }
 
 resource "azurerm_storage_account_network_rules" "test" {
-    resource_group_name  = azurerm_resource_group.example
-    storage_account_name = azurerm_storage_account.example.name
-    default_action       = "Deny"
+  resource_group_name  = azurerm_resource_group.example
+  storage_account_name = azurerm_storage_account.example.name
+  default_action       = "Deny"
 }
