@@ -15,7 +15,9 @@ resource "azurerm_storage_account" "testsa" {
   location                  = "westus"
   account_tier              = "Standard"
   account_replication_type  = "GRS"
-  default_action            = "Deny"
+  network_rules {
+    default_action = "Deny"
+  }
   enable_https_traffic_only = true
   min_tls_version           = "TLS1_2"
   queue_properties {
