@@ -15,6 +15,7 @@ resource "azurerm_storage_account" "testsa" {
   account_replication_type  = "GRS"
   default_action            = "Deny"
   enable_https_traffic_only = true
+  min_tls_version           = "TLS1_2"
   queue_properties {
     logging {
       delete                = true
