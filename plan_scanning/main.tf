@@ -28,7 +28,7 @@ resource "azurerm_storage_account" "testsa" {
     }
   }
   tags = merge(
-    var.default_tags,
+    var.additional_tags,
     {
       Name = "MyVPC"
     },
