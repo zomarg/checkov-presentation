@@ -1,0 +1,6 @@
+- repo: https://github.com/zomarg/checkov-presentation.git
+  rev: '' # change to tag or sha
+  hooks:
+    - id: terraform fmt
+    # - id: checkov
+    #   args: [--external-checks-dir, 'policies']
