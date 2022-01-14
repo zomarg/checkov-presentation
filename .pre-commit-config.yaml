@@ -1,6 +1,16 @@
-- repo: https://github.com/zomarg/checkov-presentation.git
-  rev: '' # change to tag or sha
+repos:
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: 'v0.1.17'
   hooks:
-    - id: terraform fmt
-    # - id: checkov
-    #   args: [--external-checks-dir, 'policies']
+    - id: terraform-validate
+      args: [
+         "./plan_scanning"
+       ]
+# - repo: https://github.com/antonbabenko/pre-commit-terraform
+#   rev: 'v1.62.3'
+#   hooks:
+#     - id: checkov
+#       args: [
+#         "-d", "plan_scanning",
+#         "--external-checks-dir", "policies",
+#       ]
